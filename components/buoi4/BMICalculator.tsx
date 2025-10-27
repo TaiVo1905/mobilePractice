@@ -91,7 +91,7 @@ const BMICalculator = (props: Props) => {
         return { min, max };
     };
 
-    const getRecommendations = (cat: string, bmiValue: number | null, weightNum: number | null, idealRange: { min: number; max: number } | null) => {
+    const getRecommendations = (cat: string, weightNum: number | null, idealRange: { min: number; max: number } | null) => {
         if (!cat) return [] as string[];
         const recs: string[] = [];
         if (cat === 'Underweight') {
@@ -165,7 +165,7 @@ const BMICalculator = (props: Props) => {
                                     const hNum = Number(height);
                                     const wNum = Number(weight);
                                     const ideal = getIdealWeightRange(hNum);
-                                    const recs = getRecommendations(category, bmi || null, isNaN(wNum) ? null : wNum, ideal);
+                                    const recs = getRecommendations(category, isNaN(wNum) ? null : wNum, ideal);
                                     return (
                                         <View style={{ marginTop: 8 }}>
                                             {ideal && (
