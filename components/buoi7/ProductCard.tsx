@@ -52,7 +52,7 @@ export default function ProductCard({ title, price, oldPrice, rating, discount, 
 
         {/* Add to cart */}
         <TouchableOpacity style={styles.button}>
-          <Icon name="cart-outline" size={18} color="#FFFFFF" />
+          <Icon name="cart-outline" size={12} color="#FFFFFF" />
           <Text style={styles.buttonText}>Add</Text>
         </TouchableOpacity>
       </View>
@@ -71,19 +71,19 @@ const styles = StyleSheet.create({
     shadowRadius: 6,
     elevation: 3,
     margin: 8,
-    minHeight: 280,
+    minHeight: 200,
   },
   imageContainer: {
     backgroundColor: '#F7F7F7',
     borderTopLeftRadius: 12,
     borderTopRightRadius: 12,
-    padding: 8,
+    padding: 4,
     alignItems: 'center',
     position: 'relative',
   },
   image: {
     width: '100%',
-    height: 100,
+    height: 50,
   },
   badge: {
     position: 'absolute',
@@ -154,14 +154,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#1D2939',
-    padding: 10,
+    padding: 4,
     borderRadius: 10,
     marginTop: 'auto',
   },
   buttonText: {
     color: '#FFFFFF',
     fontWeight: 'bold',
-    fontSize: 14,
+    fontSize: 12,
     marginLeft: 8,
   },
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
-import ProductCard, {ProductCardProps} from './ProductCard';
+import ProductCard from './ProductCard';
 
 const PRODUCTS_DATA = [
   { id: '1', title: 'Nike Air MX Super 2500 - Red', price: 449, oldPrice: 699, rating: 5.0, discount: 39, imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3fSkuKLp95xhBnlbDFcNjSu98bUVP-9ky7Q&s' },
