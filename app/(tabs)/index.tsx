@@ -1,5 +1,7 @@
+// import ProductList from '@/components/buoi11/ProductList';
+import Sanpham3Sqlite from '@/components/buoi11/SanPham3Sqlite';
 import StudentManagement from '@/components/buoi9/StudentManagement';
-import DanhBaCute from '@/components/kimtra/DanhBaCute';
+// import DanhBaCute from '@/components/kimtra/DanhBaCutSe';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -16,7 +18,8 @@ export default function HomeScreen() {
       {/* <View style={{ height: 50, backgroundColor: '#6200EE', justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Footer</Text>
       </View> */}
-      <DanhBaCute />
+        {/* <ProductList /> */}
+        <Sanpham3Sqlite />
     </SafeAreaView>
   );
 }

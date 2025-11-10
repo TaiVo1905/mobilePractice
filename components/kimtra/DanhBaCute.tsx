@@ -157,8 +157,8 @@ const DanhBaCute = () => {
               keyboardType="phone-pad"
             />
           </View>
-          <TouchableOpacity style={styles.addButton}>
-            <Text style={styles.addButtonText} onPress={handleAddContact}>➕ THÊM</Text>
+          <TouchableOpacity style={styles.addButton} onPress={handleAddContact}>
+            <Text style={styles.addButtonText}>➕ THÊM</Text>
           </TouchableOpacity>
         </View>
         
